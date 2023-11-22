@@ -1,0 +1,29 @@
+<div class="searcher-box">
+  <input [(ngModel)]="searchTerm" placeholder="Search" class="searcher-input"/>
+  <button (click)="searchPokemon()" class="searcher-button">Search</button>
+</div>
+<div class="pokemon-detail-box">
+    <h2>Pokémon Details</h2>
+    <div class="pokemon-detail">
+      <img [src]="pokemon.sprites.front_default" alt="Pokemon" class="image-styles-pokemon"/>
+      <div *ngIf="pokemon" class="pokemon-details-data">
+        <div>
+          <strong>Name:</strong> {{ pokemon.name }}
+        </div>
+        <div>
+          <strong>Height:</strong> {{ pokemon.height }}
+        </div>
+        <div>
+          <strong>Weight:</strong> {{ pokemon.weight }}
+        </div>
+        <div>
+          <strong>Types:</strong>
+          <ul class="list-styles">
+            <li *ngFor="let type of pokemon.types">
+              <img src="{{baseImageUrl + type.type.name + imageType}}" alt="Pokemon" class="image-styles-types"/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

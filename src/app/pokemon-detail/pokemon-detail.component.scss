@@ -1,0 +1,57 @@
+ .searcher-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    padding: 4vh;
+ }
+
+ .searcher-input{
+    height: 4vh;
+    width: 24vh;
+    border-radius: 1vh;
+ }
+
+ .searcher-button{
+    height: 4vh;
+    width: 12vh;
+    border-radius: 1vh;
+    background-color: rgb(141, 141, 251);
+ }
+
+ .pokemon-detail-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1vh;
+    border-style: double;
+ }
+
+ .pokemon-detail{
+    display: flex;
+    gap: 4vh;
+    font-size: 28px;
+ }
+
+ .pokemon-details-data{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+ }
+
+ .image-styles-types{
+    height: 4vh;
+    width: 4vh;
+ }
+
+ .image-styles-pokemon{
+    height: 32vh;
+    width: 32vh;
+ }
+
+ .list-styles{
+    list-style: none;
+    display: flex;
+    gap: 4vh;
+ }

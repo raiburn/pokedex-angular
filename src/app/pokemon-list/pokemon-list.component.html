@@ -1,0 +1,10 @@
+<div class="pokemon-list">
+    <h2>List of Pokémon</h2>
+    <ul>
+      <li *ngFor="let pokemon of pokemons">
+        <a (click)="viewPokemonDetails(pokemon.url)">
+          {{ pokemon.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
